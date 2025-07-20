@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="tsk_mngr.css" />
+  </head>
+  <body>
+    <div class="con">
+      <!-- Task Input Form -->
+      <div class="form">
+        <input type="text" placeholder="Enter UID" />
+        <p>Provide Description of Task:</p>
+        <textarea placeholder="Task Description"></textarea>
+        <input type="date" />
+        <select>
+          <option value="" selected disabled>---select dept---</option>
+          <option value="SE">Development</option>
+          <option value="ST">Software Testing</option>
+          <option value="Acc">Accounts</option>
+          <option value="HR">HR</option>
+        </select>
+        <button onclick="add()">Add Task</button>
+        <button style="display: none" onclick="upd()">Update Task</button>
+      </div>
+      <!-- Table to display tasks -->
+      <table></table>
+    </div>
+
+    <!-- Link to external JS -->
+    <script src="tsk_mngr.js"></script>
+  </body>
+</html>
